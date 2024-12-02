@@ -18,6 +18,12 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: Document_Constant.title,
   description: Document_Constant.description,
+  icons:[
+    {
+      url: "/logo.png",
+      href: "/logo.png"
+    }
+  ]
 };
 
 export default function RootLayout({
@@ -27,11 +33,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="icon" href="/favicon.png" sizes="32x32" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

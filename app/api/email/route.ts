@@ -18,15 +18,21 @@ export async function POST(request: Request) {
         }
         const password = Password_Constant;
 
-        await Mail({ email, password });
+        const res = await Mail({ email, password });
+        if (res.error){
+            return new Response(
+                JSON.stringify({ message: 'Failed to process email', email: "Mail not sent" }),
+                { status: 500, headers: { 'Content-Type': 'application/json' } }
+            );
+        }
         return new Response(
-            JSON.stringify({ message: 'Success' }),
+            JSON.stringify({ message: 'Success', email: res.message }),
             { status: 200, headers: { 'Content-Type': 'application/json' } }
         );
     } catch (error) {
-        console.error('Internal error:', error);
+        console.error(error);
         return new Response(
-            JSON.stringify({ message: 'Failed to process email' }),
+            JSON.stringify({ message: 'Failed to process email', email: "Mail not sent" }),
             { status: 500, headers: { 'Content-Type': 'application/json' } }
         );
     }

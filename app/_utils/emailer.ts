@@ -18,7 +18,12 @@ interface Request {
     ln?: string;
 }
 
-async function sendMail(m: Mail): Promise<void> {
+interface Response {
+    message: string;
+    error: string;
+}
+
+async function sendMail(m: Mail): Promise<Response> {
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
@@ -38,13 +43,14 @@ async function sendMail(m: Mail): Promise<void> {
     };
     try {
         await transporter.sendMail(mailOptions);
-        console.log('Mail sent successfully!');
+        return {"message":"Mail sent successfully!", "error":""};
     } catch (err) {
-        console.error('Error sending mail:', err);
+        const errStr = JSON.stringify(err);
+        return {"message":"Error sending mail", "error": errStr};
     }
 }
 
-async function Mail(rq: Request): Promise<void> {
+async function Mail(rq: Request): Promise<Response> {
     try {
         const subject = "Hello User";
         const body = await fetchBody();
@@ -63,9 +69,11 @@ async function Mail(rq: Request): Promise<void> {
             fn,
             ln,
         };
-        await sendMail(m);
+        const res = await sendMail(m);
+        return res;
     } catch (err) {
-        console.error('Error:', err);
+        const errStr = JSON.stringify(err);
+        return {"message":"Error sending mail", "error": errStr};
     }
 }
 

@@ -37,15 +37,15 @@ const Company_Overview = {
         },
         {
             "title": "About Us",
-            "link": "/about"
+            "link": "#about"
         },
         {
             "title": "Products",
-            "link": "/products"
+            "link": "#products"
         },
         {
             "title": "Contact Us",
-            "link": "/contact"
+            "link": "#contact"
         }
     ],
     "catalog_qr": "/images/catalog_qr.png"
