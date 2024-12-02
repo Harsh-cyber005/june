@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank you, User</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .email-header {
+            text-align: center;
+            background-color: #0046be;
+            color: #ffffff;
+            padding: 10px;
+            border-radius: 8px 8px 0 0;
+        }
+        .email-body {
+            padding: 20px;
+            color: #333;
+            line-height: 1.6;
+        }
+        .email-body h2 {
+            color: #0046be;
+        }
+        .email-footer {
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 15px;
+            color: #555;
+            border-radius: 0 0 8px 8px;
+            font-size: 12px;
+        }
+        .button {
+            display: inline-block;
+            background-color: #0046be;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #003699;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="email-header">
+            <h1>Welcome to Our Service</h1>
+        </div>
+        <div class="email-body">
+            <h2>Dear $$fn$$ $$ln$$,</h2>
+            <p>Thank you for choosing UFEX! We are excited to have you on board and look forward to providing you with the best services.</p>
+            <p>Here’s a quick summary of what you can expect:</p>
+            <ul>
+                <li>High-quality services</li>
+                <li>24/7 customer support</li>
+                <li>Exclusive member benefits</li>
+            </ul>
+            <p>If you have any questions, feel free to <a href="#">contact us</a>.</p>
+            <a href="#" class="button">Get Started</a>
+        </div>
+        <div class="email-footer">
+            <p>&copy; 2024 UFEX. All rights reserved.</p>
+            <p>KGP_FEX, Kharagpur, West Bengal, 56789</p>
+            <p><a href="#">Unsubscribe</a> | <a href="#">Privacy Policy</a></p>
+        </div>
+    </div>
+</body>
+</html>

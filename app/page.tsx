@@ -5,6 +5,8 @@ import Products from "./_components/Products";
 import Team from "./_components/Team";
 import Email from "./_components/Email";
 import GoUpButton from "./_components/GoUpButton";
+import Contact from "./_components/Contact";
+import Copyright from "./_components/Copyright";
 
 export default function Home() {
   return (
@@ -16,6 +18,8 @@ export default function Home() {
       <Month/>
       <Team/>
       <Email/>
+      <Contact/>
+      <Copyright/>
     </main>
   );
 }

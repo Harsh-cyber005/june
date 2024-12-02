@@ -1,9 +1,54 @@
 const Company_Overview = {
     "title": "Company Overview",
-    "description": "June Enterprises is one of the most trusted pharmaceutical mop suppliers in India. At June Enterprises, we supply the best quality autoclavable garments for cleanrooms. All our products go under an uncompromising quality check and never have any errors in terms of design and fit and finish. June Enterprises is a brand for being the best pharmaceutical clean room consumable products supplier in India. All our products go through a strict quality check to maintain the standards of the products. All our products are fit for the purpose they are made for. We focus a lot on the quality of the products and have a dedicated team of experts to check the quality of the products.",
+    "description": "Bhatt Enterprises is one of the most trusted pharmaceutical mop suppliers in India. At June Enterprises, we supply the best quality autoclavable garments for cleanrooms. All our products go under an uncompromising quality check and never have any errors in terms of design and fit and finish. June Enterprises is a brand for being the best pharmaceutical clean room consumable products supplier in India. All our products go through a strict quality check to maintain the standards of the products. All our products are fit for the purpose they are made for. We focus a lot on the quality of the products and have a dedicated team of experts to check the quality of the products.",
     "image": "/images/company_overview.jpg",
     "alt": "Company Overview Image",
-    "years": 10
+    "years": 10,
+    "name": "Bhatt Enterprises",
+    "full_name": "Bhatt Enterprises Pvt. Ltd.",
+    "address": "Bhatt Enterprises Pvt. Ltd. 123, ABC Road, XYZ City, 123456",
+    "phone_numbers": [
+        "+91 1234567890",
+        "+91 1234567890",
+        "+91 1234567890"
+    ],
+    "email": "bhattdivyanshu@gmail.com",
+    "social_media": [
+        {
+            "name": "Facebook",
+            "icons": {"light":"/images/facebook.svg","dark":"/images/facebook_dark.svg"},
+            "link": "#"
+        },
+        {
+            "name": "Instagram",
+            "icons": {"light":"/images/instagram.svg","dark":"/images/instagram_dark.svg"},
+            "link": "#"
+        },
+        {
+            "name": "LinkedIn",
+            "icons": {"light":"/images/linkedin.svg","dark":"/images/linkedin_dark.svg"},
+            "link": "#"
+        }
+    ],
+    "quick_links": [
+        {
+            "title": "Home",
+            "link": "/"
+        },
+        {
+            "title": "About Us",
+            "link": "/about"
+        },
+        {
+            "title": "Products",
+            "link": "/products"
+        },
+        {
+            "title": "Contact Us",
+            "link": "/contact"
+        }
+    ],
+    "catalog_qr": "/images/catalog_qr.png"
 };
 
 const Product_List = [
@@ -76,4 +121,6 @@ const Month_PD = {
     "image": "/images/month.jpg",
 }
 
-export { Company_Overview, Product_List, Month_PD };
+const Password_Constant = "jnxomuhfybjemqhp";
+
+export { Company_Overview, Product_List, Month_PD, Password_Constant };

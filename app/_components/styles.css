@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.hamburger-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.McButton {
+    --bar-width: 24px;
+    --bar-height: 3px;
+    --bar-color: rgb(0, 0, 0);
+    position: relative;
+    width: var(--bar-width);
+    height: calc(var(--bar-width) * 0.75);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.McButton span {
+    display: block;
+    position: absolute;
+    width: var(--bar-width);
+    height: var(--bar-height);
+    background-color: var(--bar-color);
+    transition: all 0.3s ease-in-out;
+}
+.McButton span:nth-child(1) {
+    top: 0;
+}
+
+.McButton span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+.McButton span:nth-child(3) {
+    top: 100%;
+    transform: translateY(-100%);
+}
+.McButton.active span:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+.McButton.active span:nth-child(2) {
+    opacity: 0;
+}
+.McButton.active span:nth-child(3) {
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+}
