@@ -5,7 +5,7 @@ import HeroClient from './HeroClient';
 
 function Hero() {
     return (
-        <div className='w-full flex flex-col lg:flex-row justify-center items-center p-10 lg:p-20 gap-5'>
+        <div id='about' className='w-full flex flex-col lg:flex-row justify-center items-center p-10 lg:p-20 gap-5'>
             <section className='w-full flex flex-col gap-2 p-5 lg:p-0'>
                 <h1 className='text-2xl font-bold'>{Company_Overview.title}</h1>
                 <p>

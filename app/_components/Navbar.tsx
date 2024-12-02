@@ -20,13 +20,13 @@ function Navbar() {
                 <section className="w-full h-full justify-center items-center gap-5 hidden md:flex">
                     <ul className="flex gap-10">
                         <li>
-                            <NavItem text='About Us' href='/about'/>
+                            <NavItem text='About Us' href='#about'/>
                         </li>
                         <li>
-                            <NavItem text='Products' href='/products'/>
+                            <NavItem text='Products' href='#products'/>
                         </li>
                         <li>
-                            <NavItem text='Contact Us' href='/contact'/>
+                            <NavItem text='Contact Us' href='#contact'/>
                         </li>
                     </ul>
                 </section>

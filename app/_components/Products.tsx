@@ -6,7 +6,7 @@ import ProductItem from './ProductItem';
 
 function Products() {
     return (
-        <div 
+        <div id='products' 
         style={{ 
             backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${product.bg})`,
             backgroundSize: 'cover',

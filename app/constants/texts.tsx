@@ -123,4 +123,10 @@ const Month_PD = {
 
 const Password_Constant = "jnxomuhfybjemqhp";
 
-export { Company_Overview, Product_List, Month_PD, Password_Constant };
+const Document_Constant = {
+    "title": "Bhatt Enterprises",
+    "description": "Bhatt Enterprises is one of the most trusted pharmaceutical mop suppliers in India.",
+    "logo": "/images/logo.png",
+}
+
+export { Company_Overview, Product_List, Month_PD, Password_Constant, Document_Constant };
